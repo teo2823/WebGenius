@@ -1,0 +1,5 @@
+colores
+
+background: #F6FFFD
+buttons: 
+Grey-light: #B3B9B7
