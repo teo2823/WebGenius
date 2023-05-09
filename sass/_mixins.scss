@@ -10,3 +10,20 @@
     padding: 5px $pad;
     background-color: variables.$greenblue;
 }
+
+@mixin titles-sections {
+    @include font-size(2rem);
+    padding: 40px 20px 0 20px;
+    color: #ffff;
+
+    font-weight: 600;
+
+    @media (min-width: 600px){
+        @include font-size(2.2rem);
+    }
+
+    @media (min-width: 800px){
+        padding-top: 80px;
+        @include font-size(2.5rem);
+    }
+}
