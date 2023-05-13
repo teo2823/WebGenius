@@ -513,7 +513,7 @@ body main .packs__button {
 }
 body main .about {
   width: 100%;
-  padding: 0 15px 50px 15px;
+  padding: 0 15px;
 }
 body main .about__title {
   font-size: calc(1.325rem + 0.9vw);
@@ -549,26 +549,13 @@ body main .about__title {
   }
 }
 body main .about__container {
-  width: 100%;
-  overflow: hidden;
-}
-body main .about__slider {
-  width: 1000px;
   margin: auto;
+  max-width: 1100px;
   display: flex;
   gap: 10px;
-  overflow-x: scroll;
-}
-@media (min-width: 720px) {
-  body main .about__slider {
-    width: auto;
-    max-width: 1100px;
-    justify-content: space-between;
-    overflow: hidden;
-  }
 }
 body main .about__client {
-  width: 160px;
+  width: 1000px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -596,54 +583,6 @@ body main .about__name {
 body main .about__rol {
   font-size: 0.5em;
   color: #969696;
-}
-@media (min-width: 400px) {
-  body main .about__client {
-    width: 250px;
-  }
-  body main .about__text {
-    font-size: 0.9em;
-  }
-  body main .about__slider {
-    gap: 20px;
-  }
-  body main .about__stars i {
-    font-size: 1.1em;
-  }
-  body main .about__img {
-    width: 35px;
-    height: 35px;
-  }
-  body main .about__name {
-    font-size: 1em;
-  }
-  body main .about__rol {
-    font-size: 0.7em;
-  }
-}
-@media (min-width: 1000px) {
-  body main .about__client {
-    width: 300px;
-  }
-  body main .about__text {
-    font-size: 1.3em;
-  }
-  body main .about__slider {
-    gap: 10px;
-  }
-  body main .about__stars i {
-    font-size: 1.2em;
-  }
-  body main .about__img {
-    width: 35px;
-    height: 35px;
-  }
-  body main .about__name {
-    font-size: 1.2em;
-  }
-  body main .about__rol {
-    font-size: 0.9em;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
