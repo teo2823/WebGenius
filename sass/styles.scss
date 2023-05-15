@@ -455,7 +455,7 @@ body {
 
         .about {
             width: 100%;
-            padding: 0 15px;
+            padding: 0 15px 50px 15px;
 
             &__title {
                 @include titles-sections;
@@ -465,13 +465,26 @@ body {
 
             &__container {
                 margin: auto;
-                max-width: 1100px;
+                gap: 10px;
+                overflow: hidden;
+                overflow-x: scroll;
+            }
+
+            &__slider {
+                margin: auto;
+                width: 600px;
                 display: flex;
                 gap: 10px;
+                @media (min-width: 720px){
+                    width: auto;
+                    max-width: 1100px;
+                    justify-content: space-between;
+                    overflow: hidden;
+                }
             }
 
             &__client {
-                width: 1000px !important;
+                width: 200px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -504,6 +517,94 @@ body {
             &__rol {
                 @include font-size(0.5em);
                 color: variables.$grey;
+            }
+
+            @media (min-width: 400px){
+                &__client {
+                    width: 250px;
+                }
+                &__text {
+                    @include font-size(0.9em)
+                }
+                &__slider {
+                    width: 810px;
+                    gap: 20px;
+                }
+                &__stars i {
+                    font-size: 1.1em;
+                }
+                &__img {
+                    width: 35px;
+                    height: 35px;
+                }
+                &__name {
+                    @include font-size(1em);
+                }
+                &__rol {
+                    @include font-size(0.7em);
+                }
+            }
+
+            @media (min-width: 550px){
+                &__client {
+                    width: 270px;
+                }
+                &__text {
+                    @include font-size(1em)
+                }
+                &__slider {
+                    gap: 20px;
+                }
+                &__stars i {
+                    font-size: 1.3em;
+                }
+                &__img {
+                    width: 35px;
+                    height: 35px;
+                }
+                &__name {
+                    @include font-size(1.1em);
+                }
+                &__rol {
+                    @include font-size(0.8em);
+                }
+            }
+            @media (min-width: 700px){
+                &__slider {
+                    width: auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                &__container {
+                    overflow: hidden;
+                }
+            }
+
+            @media (min-width: 1000px){
+                &__client {
+                    width: 300px;
+                }
+                
+                &__text {
+                    @include font-size(1.3em)
+                }
+                &__slider {
+                    gap: 30px;
+                }
+                &__stars i {
+                    font-size: 1.2em;
+                }
+                &__img {
+                    width: 35px;
+                    height: 35px;
+                }
+                &__name {
+                    @include font-size(1.2em);
+                }
+                &__rol {
+                    @include font-size(0.9em);
+                }
             }
         }
     }
