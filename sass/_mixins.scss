@@ -9,6 +9,11 @@
     text-transform: capitalize;
     padding: 5px $pad;
     background-color: variables.$greenblue;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        background-color: black;
+        color: variables.$greenblue;
+    }
 }
 
 @mixin titles-sections {
