@@ -65,6 +65,13 @@ document.addEventListener("DOMContentLoaded", function() {
             toggleActions: "play none none reverse", 
         },
     });
+
+    ScrollTrigger.create({
+        start: 'top -80',
+        end: 99999,
+        toggleClass: {className: 'header', targets: '.main-tool-bar'}
+      });
+      
 });
 
 
